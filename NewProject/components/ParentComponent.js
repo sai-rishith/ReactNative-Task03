@@ -1,25 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import CustomTextInput from '../components/CustomTextInput';
+import CustomTextInput from './CustomTextInput';
 
-const ParentComponent = () => {
-  const [username, setUsername] = useState('');
-
-  const handleUsernameChange = (text) => {
-    setUsername(text);
-  };
-
-
+const MainComponent = () => {
   return (
     <View style={styles.container}>
       <CustomTextInput
         style={styles.input}
         placeholder="Enter your username"
-        value={username}
-        onChangeText={handleUsernameChange}
       />
     </View>
-        
   );
 };
 
@@ -30,14 +20,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   input: {
-    height: 40,
     width: 200,
-    borderWidth: 1,
+    height: 40,
     borderColor: 'gray',
-    borderRadius: 5,
+    borderWidth: 1,
     paddingHorizontal: 10,
-    marginTop:300
+    marginBottom: 10,
+    marginTop:350
   },
 });
 
-export default ParentComponent;
+export default MainComponent;
