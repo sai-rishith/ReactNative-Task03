@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import CustomTextInput from './CustomTextInput';
+import CustomTextInput from '../components/CustomTextInput';
 
-const MainComponent = () => {
+const ParentComponent = () => {
   return (
     <View style={styles.container}>
       <CustomTextInput
@@ -30,4 +30,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MainComponent;
+export default ParentComponent;
