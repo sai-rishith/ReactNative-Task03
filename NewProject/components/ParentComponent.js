@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
-import CustomTextInput from './CustomTextInput';
+import CustomTextInput from '../components/CustomTextInput';
 
 const ParentComponent = () => {
   const [username, setUsername] = useState('');
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderRadius: 5,
     paddingHorizontal: 10,
-    marginTop:500
+    marginTop:300
   },
 });
 
