@@ -9,6 +9,7 @@ const ParentComponent = () => {
     setUsername(text);
   };
 
+
   return (
     <View style={styles.container}>
       <CustomTextInput
@@ -18,6 +19,7 @@ const ParentComponent = () => {
         onChangeText={handleUsernameChange}
       />
     </View>
+        
   );
 };
 
