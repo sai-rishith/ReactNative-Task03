@@ -6,9 +6,15 @@ const ParentComponent = () => {
   return (
     <View style={styles.container}>
       <CustomTextInput
-        style={styles.input}
-        placeholder="Enter your username"
+        style={styles.input01}
+        placeholder="Enter your Username"
       />
+      <View style={styles.container}>
+      <CustomTextInput
+        style={styles.input}
+        placeholder="Enter your Password"
+      />
+      </View>
     </View>
   );
 };
@@ -20,6 +26,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   input: {
+    width: 200,
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    paddingHorizontal: 10,
+    marginBottom: 10,
+    marginTop:350
+  },
+  input01: {
     width: 200,
     height: 40,
     borderColor: 'gray',
